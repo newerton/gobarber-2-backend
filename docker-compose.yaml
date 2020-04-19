@@ -1,0 +1,39 @@
+version: '3.7'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: gobarber2-postgres
+    restart: always
+    tty: true
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRES_USER=docker
+      - POSTGRES_PASSWORD=docker
+      - POSTGRES_DB=gobarber
+    networks:
+      - app-network
+
+  mongo:
+    image: mongo:latest
+    container_name: gobarber2-mongodb
+    restart: always
+    tty: true
+    ports:
+      - '27017:27017'
+    networks:
+      - app-network
+
+  redis:
+    image: redis:alpine
+    container_name: gobarber2-redis
+    restart: always
+    ports:
+      - '6379:6379'
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
