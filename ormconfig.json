@@ -1,5 +1,5 @@
 {
-  "type":"postgres",
+  "type": "postgres",
   "host": "localhost",
   "port": 5432,
   "username": "docker",
@@ -7,12 +7,12 @@
   "database": "gobarber",
   "logging": true,
   "entities": [
-    "./src/models/*.ts"
+    "./src/modules/**/infra/typeorm/entities/*.ts"
   ],
   "migrations": [
-    "./src/database/migrations/*.ts"
+    "./src/shared/infra/typeorm/migrations/*.ts"
   ],
   "cli": {
-    "migrationsDir":"./src/database/migrations"
+    "migrationsDir":"./src/shared/infra/typeorm/migrations"
   }
 }

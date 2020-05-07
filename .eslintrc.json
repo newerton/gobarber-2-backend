@@ -27,9 +27,19 @@
     "prettier/prettier": "error",
     "class-methods-use-this": "off",
     "@typescript-eslint/camelcase": "off",
-    "@typescript-eslint/no-unused-vars":["error", {
-      "argsIgnorePattern": "_"
-    }],
+    "no-useless-constructor": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "_"
+      }
+    ],
+    "@typescript-eslint/interface-name-prefix": [
+      "error",
+      {
+        "prefixWithI": "always"
+      }
+    ],
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -43,14 +53,21 @@
         "newlinesBetween": "always", // new line between groups
         "groups": [
           "module",
-          ["parent", "sibling", "index"]
+          [
+            "parent",
+            "sibling",
+            "index"
+          ]
         ],
-        "alphabetize": { "order": "asc", "ignoreCase": true }
+        "alphabetize": {
+          "order": "asc",
+          "ignoreCase": true
+        }
       }
     ]
   },
   "settings": {
-    "import/resolver":{
+    "import/resolver": {
       "typescript": {}
     }
   }
