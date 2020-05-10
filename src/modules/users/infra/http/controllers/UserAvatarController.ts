@@ -8,8 +8,9 @@ export default class UserAvatarController {
 
     const user = await updateUserAvatar.execute({
       user_id: request.user.id,
-      filename: request.file.filename,
+      avatarFilename: request.file.filename,
     });
+
     delete user.password;
 
     return response.json({ user });
