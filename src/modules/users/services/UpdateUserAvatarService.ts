@@ -1,6 +1,6 @@
 import User from '@modules/users/infra/typeorm/entities/User';
 import IUsersRepository from '@modules/users/repositories/IUsersRepository';
-import IStorageProvider from '@shared/container/providers/StorageProviders/models/IStorageProvider';
+import IStorageProvider from '@shared/container/providers/StorageProvider/models/IStorageProvider';
 import AppError from '@shared/errors/AppError';
 import { inject, injectable } from 'tsyringe';
 
@@ -15,7 +15,7 @@ class UpdateUserAvatarService {
     @inject('UsersRepository')
     private usersRepository: IUsersRepository,
 
-    @inject('StorageRepository')
+    @inject('StorageProvider')
     private storageProvider: IStorageProvider,
   ) {}
 
@@ -33,6 +33,7 @@ class UpdateUserAvatarService {
     const filename = await this.storageProvider.saveFile(avatarFilename);
 
     user.avatar = filename;
+
     await this.usersRepository.save(user);
 
     return user;

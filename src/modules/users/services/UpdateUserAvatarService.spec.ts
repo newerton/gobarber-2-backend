@@ -1,6 +1,6 @@
 import FakeUsersRepository from '@modules/users/repositories/fakes/FakeUsersRepository';
 import UpdateUserAvatarService from '@modules/users/services/UpdateUserAvatarService';
-import FakeStorageProvider from '@shared/container/providers/StorageProviders/fakes/FakeStorageProvier';
+import FakeStorageProvider from '@shared/container/providers/StorageProvider/fakes/FakeStorageProvier';
 import AppError from '@shared/errors/AppError';
 
 let fakeUsersRepository: FakeUsersRepository;

@@ -1,5 +1,5 @@
 import uploadConfig from '@config/upload';
-import IStorageProvider from '@shared/container/providers/StorageProviders/models/IStorageProvider';
+import IStorageProvider from '@shared/container/providers/StorageProvider/models/IStorageProvider';
 import fs from 'fs';
 import { resolve } from 'path';
 
