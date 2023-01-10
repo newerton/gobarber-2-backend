@@ -58,7 +58,7 @@
     "@types/redis": "^4.0.11",
     "@typescript-eslint/eslint-plugin": "^5.1.0",
     "@typescript-eslint/parser": "^5.1.0",
-    "babel-plugin-module-resolver": "^4.0.0",
+    "babel-plugin-module-resolver": "^5.0.0",
     "babel-plugin-transform-typescript-metadata": "^0.3.1",
     "eslint": "^8.0.1",
     "eslint-config-airbnb-base": "^15.0.0",
