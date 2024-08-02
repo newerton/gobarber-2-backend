@@ -57,7 +57,7 @@
     "@types/nodemailer": "^6.4.0",
     "@types/redis": "^4.0.11",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
-    "@typescript-eslint/parser": "^7.0.1",
+    "@typescript-eslint/parser": "^8.0.0",
     "babel-plugin-module-resolver": "^5.0.0",
     "babel-plugin-transform-typescript-metadata": "^0.3.1",
     "eslint": "^9.0.0",
