@@ -2,7 +2,7 @@ import mailConfig from '@config/mail';
 import ISendMailDTO from '@shared/container/providers/MailProvider/dtos/ISendMailDTO';
 import IMailProvider from '@shared/container/providers/MailProvider/models/IMailProvider';
 import IMailTemplateProvider from '@shared/container/providers/MailTemplateProvider/models/IMailTemplateProvider';
-import aws from 'aws-sdk';
+import * as aws from '@aws-sdk/client-ses';
 import nodemailer, { Transporter } from 'nodemailer';
 import { inject, injectable } from 'tsyringe';
 
@@ -15,10 +15,13 @@ export default class SESMailProvider implements IMailProvider {
     private mailTemplateProvider: IMailTemplateProvider,
   ) {
     this.client = nodemailer.createTransport({
-      SES: new aws.SES({
-        apiVersion: '2010-12-01',
-        region: process.env.AWS_DEFAULT_REGION,
-      }),
+      SES: {
+        ses: new aws.SES({
+          apiVersion: '2010-12-01',
+          region: process.env.AWS_DEFAULT_REGION,
+        }),
+        aws,
+      },
     });
   }
 

@@ -11,7 +11,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "aws-sdk": "^2.867.0",
+    "@aws-sdk/client-s3": "^3.1075.0",
+    "@aws-sdk/client-ses": "^3.1075.0",
     "bcryptjs": "^3.0.2",
     "celebrate": "^15.0.0",
     "class-transformer": "^0.5.1",
@@ -33,7 +34,7 @@
     "reflect-metadata": "^0.2.0",
     "tsyringe": "^4.4.0",
     "typeorm": "^1.0.0",
-    "uuidv4": "^6.0.7"
+    "uuid": "^14.0.1"
   },
   "devDependencies": {
     "@babel/cli": "^8.0.1",
@@ -56,22 +57,17 @@
     "@types/multer": "^2.0.0",
     "@types/nodemailer": "^8.0.0",
     "@types/redis": "^4.0.11",
-    "@typescript-eslint/eslint-plugin": "^8.0.0",
-    "@typescript-eslint/parser": "^8.0.0",
     "babel-plugin-module-resolver": "^5.0.0",
     "babel-plugin-transform-typescript-metadata": "^0.4.0",
-    "eslint": "^10.0.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "^10.0.1",
-    "eslint-import-resolver-typescript": "^4.2.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-import-helpers": "^2.0.1",
-    "eslint-plugin-prettier": "^5.0.0",
     "jest": "^30.0.0",
     "prettier": "^3.0.0",
     "ts-jest": "^29.1.1",
     "ts-node-dev": "^2.0.0",
     "tsconfig-paths": "^4.0.0",
     "typescript": "^6.0.2"
+  },
+  "overrides": {
+    "js-yaml": "^4.1.2",
+    "lodash": "^4.17.24"
   }
 }

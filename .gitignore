@@ -8,3 +8,4 @@ tmp/*
 coverage/
 ormconfig.json
 dist/
+.history
