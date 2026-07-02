@@ -30,7 +30,7 @@
     "nodemailer": "^9.0.3",
     "pg": "^8.5.1",
     "rate-limiter-flexible": "^11.0.0",
-    "redis": "^6.0.0",
+    "redis": "^6.1.0",
     "reflect-metadata": "^0.2.0",
     "tsyringe": "^4.4.0",
     "typeorm": "^1.0.0",
