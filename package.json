@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.1085.0",
-    "@aws-sdk/client-ses": "^3.1084.0",
+    "@aws-sdk/client-ses": "^3.1086.0",
     "bcryptjs": "^3.0.2",
     "celebrate": "^15.0.0",
     "class-transformer": "^0.5.1",
