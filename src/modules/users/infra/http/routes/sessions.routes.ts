@@ -1,5 +1,5 @@
 import SessionsController from '@modules/users/infra/http/controllers/SessionsController';
-import { celebrate, Segments, Joi } from 'celebrate';
+import { Joi, Segments, celebrate } from 'celebrate';
 import { Router } from 'express';
 
 const sessionsRouter = Router();

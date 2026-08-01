@@ -1,10 +1,10 @@
 import uploadConfig from '@config/upload';
 import { Exclude, Expose } from 'class-transformer';
 import {
-  Entity,
   Column,
-  PrimaryGeneratedColumn,
   CreateDateColumn,
+  Entity,
+  PrimaryGeneratedColumn,
   UpdateDateColumn,
 } from 'typeorm';
 

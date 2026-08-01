@@ -54,9 +54,8 @@ describe('ResetPasswordService', () => {
   });
 
   it('should not be able to reset the password with non-existing user', async () => {
-    const { token } = await fakeUserTokensRepository.generate(
-      'non-existing-user',
-    );
+    const { token } =
+      await fakeUserTokensRepository.generate('non-existing-user');
 
     await expect(
       resetPasswordService.execute({

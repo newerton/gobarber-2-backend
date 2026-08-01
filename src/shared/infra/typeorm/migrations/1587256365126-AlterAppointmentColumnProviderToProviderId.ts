@@ -6,7 +6,8 @@ import {
 } from 'typeorm';
 
 export default class AlterAppointmentColumnProviderToProviderId1587256365126
-  implements MigrationInterface {
+  implements MigrationInterface
+{
   public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.dropColumn('appointments', 'provider');
 

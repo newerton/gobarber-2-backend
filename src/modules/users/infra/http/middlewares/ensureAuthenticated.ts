@@ -1,6 +1,6 @@
 import authConfig from '@config/auth';
 import AppError from '@shared/errors/AppError';
-import { Response, Request, NextFunction } from 'express';
+import { NextFunction, Request, Response } from 'express';
 import { verify } from 'jsonwebtoken';
 
 interface ITokenPayload {
@@ -31,7 +31,7 @@ export default function ensureAuthenticated(
     };
 
     return next();
-  } catch (err) {
+  } catch (_err) {
     throw new AppError('Invalid JWT token', 401);
   }
 }

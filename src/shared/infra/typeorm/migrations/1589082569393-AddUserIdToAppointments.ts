@@ -6,7 +6,8 @@ import {
 } from 'typeorm';
 
 export default class AddUserIdToAppointments1589082569393
-  implements MigrationInterface {
+  implements MigrationInterface
+{
   public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.addColumn(
       'appointments',

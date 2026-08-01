@@ -3,7 +3,7 @@ import IHashProvider from '@modules/users/providers/HashProviders/models/IHashPr
 import IUsersRepository from '@modules/users/repositories/IUsersRepository';
 import ICacheProvider from '@shared/container/providers/CacheProvider/models/ICacheProvider';
 import AppError from '@shared/errors/AppError';
-import { injectable, inject } from 'tsyringe';
+import { inject, injectable } from 'tsyringe';
 
 interface IRequest {
   name: string;

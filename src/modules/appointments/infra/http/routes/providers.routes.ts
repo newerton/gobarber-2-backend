@@ -2,13 +2,15 @@ import ProviderDayAvailabilityController from '@modules/appointments/infra/http/
 import ProviderMonthAvailabilityController from '@modules/appointments/infra/http/controllers/ProviderMonthAvailabilityController';
 import ProvidersController from '@modules/appointments/infra/http/controllers/ProvidersController';
 import ensureAuthenticated from '@modules/users/infra/http/middlewares/ensureAuthenticated';
-import { celebrate, Segments, Joi } from 'celebrate';
+import { Joi, Segments, celebrate } from 'celebrate';
 import { Router } from 'express';
 
 const providersRouter = Router();
 const providersController = new ProvidersController();
-const providerMonthAvailabilityController = new ProviderMonthAvailabilityController();
-const providerDayAvailabilityController = new ProviderDayAvailabilityController();
+const providerMonthAvailabilityController =
+  new ProviderMonthAvailabilityController();
+const providerDayAvailabilityController =
+  new ProviderDayAvailabilityController();
 
 providersRouter.use(ensureAuthenticated);
 

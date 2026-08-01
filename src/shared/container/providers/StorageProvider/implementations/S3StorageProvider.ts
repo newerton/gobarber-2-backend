@@ -1,8 +1,8 @@
-import uploadConfig from '@config/upload';
+import fs from 'node:fs';
+import { resolve } from 'node:path';
 import { S3 } from '@aws-sdk/client-s3';
-import fs from 'fs';
+import uploadConfig from '@config/upload';
 import mime from 'mime';
-import { resolve } from 'path';
 
 import IStorageProvider from '../models/IStorageProvider';
 

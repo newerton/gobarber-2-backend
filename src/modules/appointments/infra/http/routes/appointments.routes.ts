@@ -1,7 +1,7 @@
 import AppointmentsController from '@modules/appointments/infra/http/controllers/AppointmentsController';
 import ProviderAppointmentsController from '@modules/appointments/infra/http/controllers/ProviderAppointmentsController ';
 import ensureAuthenticated from '@modules/users/infra/http/middlewares/ensureAuthenticated';
-import { celebrate, Segments, Joi } from 'celebrate';
+import { Joi, Segments, celebrate } from 'celebrate';
 import { Router } from 'express';
 
 const appointmentsRouter = Router();

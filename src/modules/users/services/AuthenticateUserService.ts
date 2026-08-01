@@ -4,7 +4,7 @@ import IHashProvider from '@modules/users/providers/HashProviders/models/IHashPr
 import IUsersRepository from '@modules/users/repositories/IUsersRepository';
 import AppError from '@shared/errors/AppError';
 import { sign } from 'jsonwebtoken';
-import { injectable, inject } from 'tsyringe';
+import { inject, injectable } from 'tsyringe';
 
 interface IRequest {
   email: string;

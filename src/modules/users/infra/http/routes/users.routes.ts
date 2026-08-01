@@ -2,7 +2,7 @@ import uploadConfig from '@config/upload';
 import UserAvatarController from '@modules/users/infra/http/controllers/UserAvatarController';
 import UsersController from '@modules/users/infra/http/controllers/UsersController';
 import ensureAuthenticated from '@modules/users/infra/http/middlewares/ensureAuthenticated';
-import { celebrate, Segments, Joi } from 'celebrate';
+import { Joi, Segments, celebrate } from 'celebrate';
 import { Router } from 'express';
 import multer from 'multer';
 

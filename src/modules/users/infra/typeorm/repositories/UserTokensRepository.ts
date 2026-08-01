@@ -1,6 +1,6 @@
 import UserToken from '@modules/users/infra/typeorm/entities/UserToken';
 import IUserTokensRepository from '@modules/users/repositories/IUserTokensRepository';
-import { getRepository, Repository } from 'typeorm';
+import { Repository, getRepository } from 'typeorm';
 
 class UserTokensRepository implements IUserTokensRepository {
   private ormRepository: Repository<UserToken>;

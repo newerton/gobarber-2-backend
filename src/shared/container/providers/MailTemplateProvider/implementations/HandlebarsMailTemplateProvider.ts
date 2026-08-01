@@ -1,6 +1,6 @@
+import fs from 'node:fs';
 import IParseMailTemplateDTO from '@shared/container/providers/MailTemplateProvider/dtos/IParseMailTemplateDTO';
 import IMailTemplateProvider from '@shared/container/providers/MailTemplateProvider/models/IMailTemplateProvider';
-import fs from 'fs';
 import handlebars from 'handlebars';
 
 class HandlebarsMailTemplateProvider implements IMailTemplateProvider {

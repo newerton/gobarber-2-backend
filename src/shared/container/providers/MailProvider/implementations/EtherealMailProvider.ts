@@ -2,7 +2,7 @@ import ISendMailDTO from '@shared/container/providers/MailProvider/dtos/ISendMai
 import IMailProvider from '@shared/container/providers/MailProvider/models/IMailProvider';
 import IMailTemplateProvider from '@shared/container/providers/MailTemplateProvider/models/IMailTemplateProvider';
 import nodemailer, { Transporter } from 'nodemailer';
-import { injectable, inject } from 'tsyringe';
+import { inject, injectable } from 'tsyringe';
 
 @injectable()
 class EtherealMailProvider implements IMailProvider {
@@ -12,7 +12,7 @@ class EtherealMailProvider implements IMailProvider {
     @inject('MailTemplateProvider')
     private mailTemplateProvider: IMailTemplateProvider,
   ) {
-    nodemailer.createTestAccount().then(account => {
+    nodemailer.createTestAccount().then((account) => {
       console.log('Credentials obtained, sending message...');
 
       const transporter = nodemailer.createTransport({

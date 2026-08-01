@@ -1,6 +1,6 @@
-import crypto from 'crypto';
+import crypto from 'node:crypto';
+import { resolve } from 'node:path';
 import multer, { StorageEngine } from 'multer';
-import { resolve } from 'path';
 
 const tmpFolder = resolve(__dirname, '..', '..', 'tmp');
 const uploadsFolder = resolve(tmpFolder, 'uploads');

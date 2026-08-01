@@ -3,7 +3,7 @@ import IAppointmentsRepository from '@modules/appointments/repositories/IAppoint
 import INotificationsRepository from '@modules/notifications/repositories/INotificationsRepository';
 import ICacheProvider from '@shared/container/providers/CacheProvider/models/ICacheProvider';
 import AppError from '@shared/errors/AppError';
-import { startOfHour, isBefore, getHours, format } from 'date-fns';
+import { format, getHours, isBefore, startOfHour } from 'date-fns';
 import { inject, injectable } from 'tsyringe';
 
 interface IRequest {
@@ -46,10 +46,11 @@ class CreateAppointmentService {
       );
     }
 
-    const findAppointmentInSameDate = await this.appointmentsRepository.findByDate(
-      appointmentDate,
-      provider_id,
-    );
+    const findAppointmentInSameDate =
+      await this.appointmentsRepository.findByDate(
+        appointmentDate,
+        provider_id,
+      );
 
     if (findAppointmentInSameDate) {
       throw new AppError('This appointment is already booked');
