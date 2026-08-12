@@ -29,7 +29,7 @@
     "mongodb": "^7.5.0",
     "multer": "^2.2.0",
     "nodemailer": "^9.0.5",
-    "pg": "^8.22.0",
+    "pg": "^8.23.0",
     "rate-limiter-flexible": "^11.2.0",
     "redis": "^6.2.0",
     "reflect-metadata": "^0.2.2",
