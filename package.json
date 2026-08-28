@@ -26,7 +26,7 @@
     "ioredis": "^6.0.0",
     "jsonwebtoken": "^9.0.3",
     "mime": "^4.1.0",
-    "mongodb": "^7.5.0",
+    "mongodb": "^7.6.0",
     "multer": "^2.2.0",
     "nodemailer": "^9.0.5",
     "pg": "^8.23.0",
