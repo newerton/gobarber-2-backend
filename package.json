@@ -30,7 +30,7 @@
     "multer": "^2.4.0",
     "nodemailer": "^10.1.2",
     "pg": "^8.23.1",
-    "rate-limiter-flexible": "^11.2.2",
+    "rate-limiter-flexible": "^11.2.3",
     "redis": "^6.3.0",
     "reflect-metadata": "^0.2.2",
     "tsyringe": "^4.10.0",
