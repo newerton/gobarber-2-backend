@@ -38,7 +38,7 @@
     "uuid": "^14.0.3"
   },
   "devDependencies": {
-    "@babel/cli": "^8.0.6",
+    "@babel/cli": "^8.1.0",
     "@babel/core": "^8.0.10",
     "@babel/node": "^8.0.6",
     "@babel/plugin-proposal-class-properties": "^7.18.6",
